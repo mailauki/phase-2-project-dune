@@ -5,8 +5,8 @@ function BookList({ books }) {
   return (
     <ul>
       {books.map(book => 
-        // <BookCard book={book} />
-        <BookDetail book={book} />
+        <BookCard book={book} />
+        // <BookDetail book={book} />
       )}
     </ul>
   )
