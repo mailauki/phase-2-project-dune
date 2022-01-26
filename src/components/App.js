@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import BookList from "./BookList";
+import { NavLink, Switch, Route } from "react-router-dom";
+import Header from "./Header";
+import Books from "./Books";
 
 function App() {
   const [books, setBooks] = useState([])
@@ -12,9 +14,12 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Dune</h2>
-      <h3>Books</h3>
-      <BookList books={books} />
+      <Header />
+      <div className="contents-container">
+        <Switch>
+          <Route path="/books"><Books books={books} /></Route>
+        </Switch>
+      </div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function BookDetail({ book }) {
   const { id, title, author, year, wiki_url } = book
 
-  return(
+  return (
     <div key={id} className="book-detail">
       <h3>{title}</h3>
       <h5>{author}</h5>
