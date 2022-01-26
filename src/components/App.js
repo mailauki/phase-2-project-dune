@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import BookList from "./BookList";
 
 function App() {
   const [books, setBooks] = useState([])
@@ -13,7 +14,7 @@ function App() {
     <div className="App">
       <h2>Dune</h2>
       <h3>Books</h3>
-      {books.map(book => <p key={book.id}>{book.title}</p>)}
+      <BookList books={books} />
     </div>
   );
 }
