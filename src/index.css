@@ -41,4 +41,25 @@ code {
 /* Cover Image */
 .cover-image {
   width: 100%;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 0 100px 100px #000;
+}
+
+/* Home */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.quote {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 60%;
+  margin: 50px auto;
 }

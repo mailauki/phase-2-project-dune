@@ -6,7 +6,7 @@ import Books from "./Books";
 
 function App() {
   const [books, setBooks] = useState([])
-  const [quote, setQuote] = useState("")
+  const [quote, setQuote] = useState("loading quote ...")
 
   useEffect(() => {
     fetch("https://the-dune-api.herokuapp.com/books/22")
@@ -15,7 +15,7 @@ function App() {
 
     fetch("http://the-dune-api.herokuapp.com/quotes/1")
     .then(r => r.json())
-    .then(data => setQuote(data))
+    .then(data => setQuote(data[0].quote))
   }, [])
 
   return (
