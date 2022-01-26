@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 0 20px;
+  /* background-color: #000; */
+  /* color: #FFF; */
+}
+
+/* NavBar */
+.navbar a {
+  /* color: #FFF; */
+  color: #888;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 6px;
+  margin: 0 6px;
+}
+
+.navbar .active {
+  color: #000;
+  border-bottom: 3px solid rgb(207, 69, 5);
+}
+
+/* Cover Image */
+.cover-image {
+  width: 100%;
+}

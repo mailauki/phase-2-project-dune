@@ -2,7 +2,7 @@ import NavBar from "./NavBar";
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <h2>Dune</h2>
       <NavBar />
     </header>
