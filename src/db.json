@@ -1,0 +1,9 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Dune",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41+L9Q+rCLL._SX277_BO1,204,203,200_.jpg"
+    }
+  ]
+}
