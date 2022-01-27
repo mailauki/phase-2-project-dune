@@ -1,14 +1,23 @@
+import { useEffect, useState } from "react";
 import BookCard from "./BookCard";
-import BookDetail from "./BookDetail";
 
-function BookList({ books }) {
+function BookList() {
+  const [books, setBooks] = useState([])
+
+  useEffect(() => {
+    fetch("https://the-dune-api.herokuapp.com/books/22")
+    .then(r => r.json())
+    .then(data => setBooks(data))
+  }, [])
+
   return (
-    <ul>
-      {books.map(book => 
-        <BookCard book={book} />
-        // <BookDetail book={book} />
-      )}
-    </ul>
+    <div className="book-container">
+      <ul className="book-list">
+        {books.map(book => 
+          <BookCard key={book.id} book={book} />
+        )}
+      </ul>
+    </div>
   )
 }
 

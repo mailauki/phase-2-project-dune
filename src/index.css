@@ -12,20 +12,22 @@ code {
     monospace;
 }
 
+/* App */
+/* .app {
+  padding: 0 30px;
+} */
+
 /* Header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  padding: 0 20px;
-  /* background-color: #000; */
-  /* color: #FFF; */
+  padding: 0 30px;
 }
 
 /* NavBar */
 .navbar a {
-  /* color: #FFF; */
   color: #888;
   text-decoration: none;
   font-weight: bold;
@@ -44,6 +46,7 @@ code {
   position: fixed;
   bottom: 0;
   box-shadow: 0 0 100px 100px #000;
+  z-index: 0;
 }
 
 /* Home */
@@ -51,9 +54,6 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
   text-align: center;
   width: 100%;
 }
@@ -61,5 +61,36 @@ code {
 .quote {
   font-family: Georgia, 'Times New Roman', Times, serif;
   width: 60%;
-  margin: 50px auto;
+  margin: 60px auto;
+}
+
+/* Books */
+.book-container {
+  text-align: center;
+  margin: 0 10px 40px 10px;
+}
+
+.book-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+}
+
+.book-card {
+  padding: 10px 20px;
+  margin: 10px auto;
+  background-color: #C8C8C8;
+  border-radius: 20px;
+}
+
+.book-card a {
+  text-decoration: none;
+  color: #000;
+}
+
+.book-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
