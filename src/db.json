@@ -2,8 +2,179 @@
   "books": [
     {
       "id": 1,
-      "name": "Dune",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/41+L9Q+rCLL._SX277_BO1,204,203,200_.jpg"
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41+L9Q+rCLL._SX277_BO1,204,203,200_.jpg",
+      "series": "Dune",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 2,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 3,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 4,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 5,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 6,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 7,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 8,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 9,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 10,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 11,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 12,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 13,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 14,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 15,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 16,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 17,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 18,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 19,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 20,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 21,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
+    },
+    {
+      "id": 22,
+      "image": "",
+      "series": "",
+      "rating": 0,
+      "comments": "",
+      "reading_status": ""
     }
   ]
 }
