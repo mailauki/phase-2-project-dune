@@ -149,6 +149,40 @@ code {
   color: #000;
 }
 
+/* Search Bar */
+.search-bar {
+  position: sticky;
+  top: 72px;
+  margin-top: -2px;
+  padding: 8px;
+  background-color: #FFF;
+  width: 100%;
+}
+
+.icon {
+  width: 18px;
+  vertical-align: middle;
+  margin: 2px 6px;
+  filter:brightness(3)
+}
+
+#search-filter {
+  width: 300px;
+  height: 22px;
+  border: none;
+  background-color: #EEE;
+  border-radius: 6px;
+}
+
+#search {
+  width: 300px;
+  height: 22px;
+  border: none;
+  background-color: #EEE;
+  border-radius: 6px;
+}
+
+/* Media Queries */
 @media (max-width: 600px) {
   .book-detail {
     width: 100%;
