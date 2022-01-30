@@ -7,11 +7,22 @@ function BookDetail() {
   const [isOpen, setIsOpen] = useState(false)
   const [rating, setRating] = useState(0)
   const [comment, setComment] = useState("")
+  const [image, setImage] = useState("https://voice.global/wp-content/plugins/wbb-publications/public/assets/img/placeholder.jpg")
+  const [series, setSeries] = useState("")
 
   useEffect(() => {
     fetch(`https://the-dune-api.herokuapp.com/books/id/${id}`)
         .then(r => r.json())
         .then(data => setDetail(data))
+
+        fetch(`http://localhost:3001/books/${id}`)
+        .then(r => r.json())
+        .then(data => {
+          setImage(data.image)
+          setSeries(data.series)
+          setRating(data.rating)
+          setComment(data.comments)
+        })
   }, [id])
 
 
@@ -19,25 +30,34 @@ function BookDetail() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    const formData = {rating: rating, comment: comment}
-    console.log(formData)
+    const formData = {rating: Number(rating), comments: comment}
+    // console.log(formData)
 
-    // add post fetch here
+    fetch(`http://localhost:3001/books/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(r => r.json())
+    .then(data => console.log(data))
 
-    setRating(0)
-    setComment("")
-    setIsOpen(false)
+    // setRating(0)
+    // setComment("")
+    // setIsOpen(false)
   }
 
   return (
     <div className="books-container">
       <div className="book-detail">
-        <img src="https://voice.global/wp-content/plugins/wbb-publications/public/assets/img/placeholder.jpg" alt={title} className="image"/>
+        <img src={image} alt={title} className="image"/>
         <div className="details">
           <h3>{title}</h3>
           {author.length === 2 ? author.map(a => <h5 key={a}>{a}</h5>) : <h5>{author}</h5>}
           <p>{year}</p>
-          <Link to={`${wiki_url}`}>{title} Wiki</Link>
+          <p>{series} Series</p>
+          {/* <Link to={`${wiki_url}`}>{title} Wiki</Link> */}
           {isOpen ? 
           <form onSubmit={handleSubmit}>
             <div className="rating">
