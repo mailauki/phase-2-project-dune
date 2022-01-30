@@ -45,7 +45,7 @@ function BookDetail() {
 
     // setRating(0)
     // setComment("")
-    // setIsOpen(false)
+    setIsOpen(false)
   }
 
   return (
@@ -56,7 +56,7 @@ function BookDetail() {
           <h3>{title}</h3>
           {author.length === 2 ? author.map(a => <h5 key={a}>{a}</h5>) : <h5>{author}</h5>}
           <p>{year}</p>
-          <p>{series} Series</p>
+          <p>{series}</p>
           {/* <Link to={`${wiki_url}`}>{title} Wiki</Link> */}
           {isOpen ? 
           <form onSubmit={handleSubmit}>

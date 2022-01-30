@@ -70,7 +70,8 @@ code {
 /* Books */
 .books-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   padding: 0;
   width: 80%;
 }
@@ -79,7 +80,6 @@ code {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 240px));
-  /* width: 60%; */
   margin: 0;
   padding: 0;
 }
@@ -90,7 +90,7 @@ code {
   align-items: center;
   padding: 10px 20px;
   margin: 10px;
-  background-color: #C8C8C8;
+  background-color: #C8C8C8CC;
   border-radius: 20px;
 }
 
@@ -107,7 +107,7 @@ code {
 
 .book-detail {
   margin: 10px auto;
-  background-color: #C8C8C8;
+  background-color: #C8C8C8CC;
   border-radius: 20px;
   width: 60%;
 }
@@ -160,7 +160,7 @@ code {
   }
 
   .books-container {
-    margin-bottom: 300px;
+    margin-bottom: 140px;
     width: 100%;
   }
 }

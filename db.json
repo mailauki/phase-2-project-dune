@@ -3,7 +3,7 @@
     {
       "id": "1",
       "image": "https://images-na.ssl-images-amazon.com/images/I/41+L9Q+rCLL._SX277_BO1,204,203,200_.jpg",
-      "series": "Dune",
+      "series": "Dune Chronicles: 1",
       "rating": 0,
       "comments": "",
       "reading_status": ""
@@ -11,7 +11,7 @@
     {
       "id": "2",
       "image": "https://images.penguinrandomhouse.com/cover/9780593201732",
-      "series": "",
+      "series": "Dune Chronicles: 2",
       "rating": 0,
       "comments": "",
       "reading_status": ""
@@ -19,7 +19,7 @@
     {
       "id": "3",
       "image": "https://images4.penguinrandomhouse.com/cover/9780593201749?height=295&alt=cover_coming_soon.jpg",
-      "series": "",
+      "series": "Dune Chronicles: 3",
       "rating": 0,
       "comments": "",
       "reading_status": ""
@@ -27,7 +27,7 @@
     {
       "id": "4",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHfk44HoY0mUwO7f3t7y-f971D51DyjFGL59ihg8prwWnwjFBWZ9rVzxp4_ZJZTRmhrY&usqp=CAU",
-      "series": "",
+      "series": "Dune Chronicles: 4",
       "rating": 0,
       "comments": "",
       "reading_status": ""
@@ -35,7 +35,7 @@
     {
       "id": "5",
       "image": "https://images4.penguinrandomhouse.com/cover/9780593201763?height=295&alt=cover_coming_soon.jpg",
-      "series": "",
+      "series": "Dune Chronicles: 5",
       "rating": 0,
       "comments": "",
       "reading_status": ""
@@ -43,7 +43,7 @@
     {
       "id": "6",
       "image": "https://images.penguinrandomhouse.com/cover/9780593201770",
-      "series": "",
+      "series": "Dune Chronicles: 6",
       "rating": 0,
       "comments": "",
       "reading_status": ""
@@ -51,7 +51,7 @@
     {
       "id": "7",
       "image": "https://images.penguinrandomhouse.com/cover/700jpg/9780593354964",
-      "series": "",
+      "series": "Prelude to Dune: 1",
       "rating": 0,
       "comments": "",
       "reading_status": ""
@@ -59,7 +59,7 @@
     {
       "id": "8",
       "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/5933/9780593354957.jpg",
-      "series": "",
+      "series": "Prelude to Dune: 2",
       "rating": 0,
       "comments": "",
       "reading_status": ""
@@ -67,7 +67,7 @@
     {
       "id": "9",
       "image": "https://images.penguinrandomhouse.com/cover/700jpg/9780593354940",
-      "series": "",
+      "series": "Prelude to Dune: 3",
       "rating": 0,
       "comments": "",
       "reading_status": ""
@@ -75,7 +75,7 @@
     {
       "id": "10",
       "image": "https://images-na.ssl-images-amazon.com/images/I/81KKq7hh9-L.jpg",
-      "series": "",
+      "series": "Legends of Dune: 1",
       "rating": 0,
       "comments": "",
       "reading_status": ""
@@ -83,7 +83,7 @@
     {
       "id": "11",
       "image": "https://mpd-biblio-covers.imgix.net/9781250212801.jpg?w=300",
-      "series": "",
+      "series": "Legends of Dune: 2",
       "rating": 0,
       "comments": "",
       "reading_status": ""
@@ -91,7 +91,7 @@
     {
       "id": "12",
       "image": "https://images.booksense.com/images/818/212/9781250212818.jpg",
-      "series": "",
+      "series": "Legends of Dune: 3",
       "rating": 0,
       "comments": "",
       "reading_status": ""
