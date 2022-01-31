@@ -47,7 +47,7 @@ code {
 
 .navbar .active {
   color: #000;
-  border-bottom: 3px solid rgb(207, 69, 5);
+  border-bottom: 3px solid rgb(207, 70, 5);
 }
 
 /* Cover Image */
@@ -94,17 +94,13 @@ code {
   border-radius: 20px;
 }
 
-.book-card a {
-  text-decoration: none;
-  color: #000;
-}
-
 .book-card .image {
   width: 60%;
   margin: 40px auto;
   box-shadow: 8px 8px 20px #333;
 }
 
+/* Detail */
 .book-detail {
   margin: 10px auto;
   background-color: #C8C8C8CC;
@@ -128,14 +124,21 @@ code {
   padding: 20px 20px 40px 20px;
 }
 
-.details h5 {
+.details h4 {
   margin: 4px;
+  color: #888;
+}
+
+.details p {
+  line-height: 12px;
+  padding: 4px;
+  margin: 6px;
 }
 
 .details button {
   width: 30%;
   padding: 10px;
-  margin: 10px auto;
+  margin: 16px auto;
   font-weight: bold;
   border: 3px solid rgb(208, 70, 5);
   border-radius: 20px;
@@ -166,7 +169,7 @@ code {
   filter:brightness(3)
 }
 
-#search-filter {
+#search {
   width: 300px;
   height: 22px;
   border: none;
@@ -174,12 +177,82 @@ code {
   border-radius: 6px;
 }
 
-#search {
-  width: 300px;
-  height: 22px;
-  border: none;
-  background-color: #EEE;
-  border-radius: 6px;
+/* Review Form */
+.review-form {
+  padding: 10px;
+  margin: 10px;
+  background-color: #F6F6F6;
+}
+
+.rating, .comment {
+  padding: 4px;
+}
+
+.comment textarea {
+  border-color: #888;
+}
+
+.submit {
+  width: 30%;
+  padding: 10px;
+  margin: 16px auto;
+  font-weight: bold;
+  border: 3px solid rgb(208, 70, 5);
+  border-radius: 20px;
+  background-color: rgb(208, 70, 5);
+  color: #FFF;
+}
+
+.submit:hover {
+  background-color: #FFF;
+  border: 3px solid rgb(208, 70, 5);
+  color: #000;
+}
+
+/* Reviews */
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.reviews {
+  list-style: none;
+  width: 60%;
+  margin: 0;
+  padding: 0;
+}
+
+.review-card {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #C8C8C8CC;
+  border-radius: 20px;
+}
+
+.review-card h5 {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 16px;
+  padding: 4px;
+  margin: 6px;
+}
+
+.edit {
+  width: 30%;
+  padding: 10px;
+  margin: 16px auto;
+  font-weight: bold;
+  border: 3px solid rgb(208, 70, 5);
+  border-radius: 20px;
+  background-color: rgb(208, 70, 5);
+  color: #FFF;
+}
+
+.edit:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 3px solid rgb(208, 70, 5);
+  color: #000;
 }
 
 /* Media Queries */

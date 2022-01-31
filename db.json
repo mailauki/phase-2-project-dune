@@ -4,8 +4,8 @@
       "id": "1",
       "image": "https://images-na.ssl-images-amazon.com/images/I/41+L9Q+rCLL._SX277_BO1,204,203,200_.jpg",
       "series": "Dune Chronicles: 1",
-      "rating": 0,
-      "comments": "",
+      "rating": 5,
+      "comments": "Classic.",
       "reading_status": ""
     },
     {
@@ -28,8 +28,8 @@
       "id": "4",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHfk44HoY0mUwO7f3t7y-f971D51DyjFGL59ihg8prwWnwjFBWZ9rVzxp4_ZJZTRmhrY&usqp=CAU",
       "series": "Dune Chronicles: 4",
-      "rating": 0,
-      "comments": "",
+      "rating": 4,
+      "comments": "Plot twists around every corner.",
       "reading_status": ""
     },
     {
@@ -60,8 +60,8 @@
       "id": "8",
       "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/5933/9780593354957.jpg",
       "series": "Prelude to Dune: 2",
-      "rating": 0,
-      "comments": "",
+      "rating": 3,
+      "comments": "Great villains.",
       "reading_status": ""
     },
     {
@@ -84,8 +84,8 @@
       "id": "11",
       "image": "https://mpd-biblio-covers.imgix.net/9781250212801.jpg?w=300",
       "series": "Legends of Dune: 2",
-      "rating": 0,
-      "comments": "",
+      "rating": 4,
+      "comments": "Great insight into background.",
       "reading_status": ""
     },
     {

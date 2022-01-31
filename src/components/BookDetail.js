@@ -54,12 +54,11 @@ function BookDetail() {
         <img src={image} alt={title} className="image"/>
         <div className="details">
           <h3>{title}</h3>
-          {author.length === 2 ? author.map(a => <h5 key={a}>{a}</h5>) : <h5>{author}</h5>}
+          {author.length === 2 ? author.map(a => <h4 key={a}>{a}</h4>) : <h4>{author}</h4>}
           <p>{year}</p>
           <p>{series}</p>
-          {/* <Link to={`${wiki_url}`}>{title} Wiki</Link> */}
           {isOpen ? 
-          <form onSubmit={handleSubmit}>
+          <form className="review-form" onSubmit={handleSubmit}>
             <div className="rating">
               <label>Rating: {rating} </label>
               <input type="range" id="rating" name="rating" min="0" max="5" onChange={(e) => setRating(e.target.value)} value={rating}></input>
@@ -68,7 +67,7 @@ function BookDetail() {
               <label>Comments: </label>
               <textarea id="comment" name="comment" rows="5" cols="30" placeholder="comments and thoughts on this book..." onChange={(e) => setComment(e.target.value)} value={comment}></textarea>
             </div>
-            <input type="submit"></input>
+            <input type="submit" className="submit" />
           </form> 
           : <button onClick={() => setIsOpen(true)}>Review</button>}
         </div>
