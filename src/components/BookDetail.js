@@ -11,6 +11,7 @@ function BookDetail() {
   const [image, setImage] = useState("https://voice.global/wp-content/plugins/wbb-publications/public/assets/img/placeholder.jpg")
   const [series, setSeries] = useState("")
   const [review, setReview] = useState(null)
+  const [status, setStatus] = useState("")
 
   useEffect(() => {
     fetch(`https://the-dune-api.herokuapp.com/books/id/${id}`)
@@ -23,6 +24,7 @@ function BookDetail() {
           setImage(data.image)
           setSeries(data.series)
           setReview(data.rating)
+          setStatus(data.reading_status)
         })
   }, [id])
 
@@ -30,6 +32,18 @@ function BookDetail() {
   const { title, author, year, wiki_url } = detail
 
   const form = isOpen ? <Form id={id} rating={rating} comment={comment} onRatingChange={value => setRating(value)} onCommentChange={value => setComment(value)} onSubmit={value => setIsOpen(value)} /> : <button onClick={() => setIsOpen(true)}>Review</button>
+
+  function handleStatus(e) {
+    fetch(`http://localhost:3001/books/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({reading_status: e.target.value})
+    })
+    .then(r => r.json())
+    .then(data => setStatus(data.reading_status))
+  }
 
   return (
     <div className="books-container">
@@ -40,6 +54,13 @@ function BookDetail() {
           {author.length === 2 ? author.map(a => <h4 key={a}>{a}</h4>) : <h4>{author}</h4>}
           <p>{year}</p>
           <p>{series}</p>
+
+          <select className="reading-status" onChange={handleStatus} value={status}>
+            <option value="">--- Select Reading Status ---</option>
+            <option value="reading">Currently Reading</option>
+            <option value="read">Read</option>
+            <option value="to-read">Want to Read</option>
+          </select>
 
           {review === null ? form : null}
         </div>

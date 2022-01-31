@@ -152,6 +152,12 @@ code {
   color: #000;
 }
 
+.reading-status {
+  text-align: center;
+  padding: 4px;
+  margin: 10px;
+}
+
 /* Search Bar */
 .search-bar {
   position: sticky;

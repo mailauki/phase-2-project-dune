@@ -6,7 +6,7 @@
       "series": "Dune Chronicles: 1",
       "rating": 5,
       "comments": "Classic.",
-      "reading_status": ""
+      "reading_status": "read"
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "series": "Dune Chronicles: 2",
       "rating": null,
       "comments": "",
-      "reading_status": ""
+      "reading_status": "reading"
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "series": "Dune Chronicles: 3",
       "rating": null,
       "comments": "",
-      "reading_status": ""
+      "reading_status": "to-read"
     },
     {
       "id": "4",
