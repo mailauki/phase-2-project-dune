@@ -182,14 +182,19 @@ code {
   padding: 10px;
   margin: 10px;
   background-color: #F6F6F6;
+  border-radius: 10px;
 }
 
 .rating, .comment {
   padding: 4px;
+  margin: 8px;
 }
 
 .comment textarea {
   border-color: #888;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 6px;
 }
 
 .submit {
@@ -207,6 +212,10 @@ code {
   background-color: #FFF;
   border: 3px solid rgb(208, 70, 5);
   color: #000;
+}
+
+.hr {
+  width: 40%;
 }
 
 /* Reviews */
@@ -269,5 +278,8 @@ code {
   .books-container {
     margin-bottom: 140px;
     width: 100%;
+  }
+  .reviews {
+    width: 80%;
   }
 }

@@ -32,7 +32,7 @@ function Reviews() {
     <div className="reviews-container">
       <ul className="reviews">
         {updatedBooks.map(book => {
-          if(book.comments !== "") { // maybe use rating instead or also
+          if(book.rating !== null) {
             return <ReviewCard key={book.id} book={book} />
           }
         })}

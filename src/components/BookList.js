@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import BookCard from "./BookCard";
+import SearchBar from "./SearchBar";
 
 function BookList() {
   const [books, setBooks] = useState([])
@@ -54,17 +55,7 @@ function BookList() {
 
   return (
     <div className="books-container">
-      <div className="search-bar">
-        <img src="https://freesvg.org/img/Minimal-Magnifying-Glass.png" alt="search-icon" className="icon" />
-        <input placeholder="search by title, series, author, etc." list="search-filter" name="search-filter" id="search" onChange={(e) => setSearchFilter(e.target.value)} />
-        <datalist id="search-filter">
-          <option value="Dune Chronicles" />
-          <option value="Legends of Dune" />
-          <option value="Prelude to Dune" />
-          <option value="Heroes of Dune" />
-          <option value="Schools of Dune" />
-        </datalist>
-      </div>
+      <SearchBar onSearchChange={value => setSearchFilter(value)} />
       <ul className="book-list">
         {filteredBooks.sort((a, b) => a.id - b.id).map(book => 
           <BookCard key={book.id} book={book} />

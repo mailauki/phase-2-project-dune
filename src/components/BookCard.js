@@ -9,7 +9,7 @@ function BookCard({ book }) {
     <li className="book-card">
       <Link to={`/books/${book.id}`}>
         <img src={book.image} alt={book.title} className="image"/>
-        <h5>{book.title}</h5>
+        {/* <h5>{book.title}</h5> */}
       </Link>
     </li>
   )
