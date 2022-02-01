@@ -158,28 +158,41 @@ code {
   margin: 10px;
 }
 
-/* Search Bar */
-.search-bar {
+/* Filters */
+.filter-container {
   position: sticky;
   top: 72px;
   margin-top: -2px;
-  padding: 8px;
+  padding: 6px;
   background-color: #FFF;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  height: fit-content;
 }
 
 .icon {
   width: 18px;
   vertical-align: middle;
   margin: 2px 6px;
-  filter:brightness(3)
+  filter: brightness(3)
 }
 
 #search {
-  width: 300px;
+  width: 220px;
   height: 22px;
+  padding: 4px;
   border: none;
   background-color: #EEE;
+  border-radius: 6px;
+}
+
+.reading-status {
+  height: 30px;
   border-radius: 6px;
 }
 
@@ -285,7 +298,12 @@ code {
     margin-bottom: 140px;
     width: 100%;
   }
+
   .reviews {
     width: 80%;
+  }
+
+  .filter-container {
+    flex-direction: column;
   }
 }

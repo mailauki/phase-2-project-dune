@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import BookCard from "./BookCard";
-import SearchBar from "./SearchBar";
-import ReadingStatus from "./ReadingStatus";
+import Filters from "./Filters";
 
 function BookList() {
   const [books, setBooks] = useState([])
@@ -65,8 +64,7 @@ function BookList() {
 
   return (
     <div className="books-container">
-      <SearchBar onSearchChange={value => setSearchFilter(value)} />
-      <ReadingStatus onStatusChange={(e) => setStatusFilter(e.target.value)} status={statusFilter} />
+      <Filters onSearchChange={value => setSearchFilter(value)} status={statusFilter} onStatusChange={(e) => setStatusFilter(e.target.value)} />
       <ul className="book-list">
         {filteredBooks.sort((a, b) => a.id - b.id).map(book => 
           <BookCard key={book.id} book={book} />
