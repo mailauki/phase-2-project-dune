@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Form from "./Form";
+import ReadingStatus from "./ReadingStatus";
 
 function BookDetail() {
   const { id } = useParams()
@@ -32,7 +33,7 @@ function BookDetail() {
   const { title, author, year, wiki_url } = detail
 
   const form = isOpen ? <Form id={id} rating={rating} comment={comment} onRatingChange={value => setRating(value)} onCommentChange={value => setComment(value)} onSubmit={value => setIsOpen(value)} /> : <button onClick={() => setIsOpen(true)}>Review</button>
-
+  
   function handleStatus(e) {
     fetch(`http://localhost:3001/books/${id}`, {
       method: "PATCH",
@@ -55,12 +56,7 @@ function BookDetail() {
           <p>{year}</p>
           <p>{series}</p>
 
-          <select className="reading-status" onChange={handleStatus} value={status}>
-            <option value="">--- Select Reading Status ---</option>
-            <option value="reading">Currently Reading</option>
-            <option value="read">Read</option>
-            <option value="to-read">Want to Read</option>
-          </select>
+          <ReadingStatus id={id} status={status} onStatusChange={handleStatus} />
 
           {review === null ? form : null}
         </div>

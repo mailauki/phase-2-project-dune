@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import BookCard from "./BookCard";
 import SearchBar from "./SearchBar";
+import ReadingStatus from "./ReadingStatus";
 
 function BookList() {
   const [books, setBooks] = useState([])
   const [updatedBooks, setUpdatedBooks] = useState(books)
   const [searchFilter, setSearchFilter] = useState("")
+  const [statusFilter, setStatusFilter] = useState("")
 
   useEffect(() => {
     fetch("https://the-dune-api.herokuapp.com/books/22")
@@ -21,7 +23,7 @@ function BookList() {
       data.map(data => {
         books.map(book => {
           if(data.id === book.id) {
-            const newData = {...book, image: data.image, series: data.series, rating: data.rating, comments: data.comments}
+            const newData = {...book, image: data.image, series: data.series, rating: data.rating, comments: data.comments, reading_status: data.reading_status}
             updatedData.push(newData)
           }
         })
@@ -51,11 +53,20 @@ function BookList() {
         return book
       }
     }
+  }) 
+  .filter(book => {
+    if(book.reading_status === statusFilter) {
+      return book
+    }
+    else if(statusFilter === "") {
+      return book
+    }
   })
 
   return (
     <div className="books-container">
       <SearchBar onSearchChange={value => setSearchFilter(value)} />
+      <ReadingStatus onStatusChange={(e) => setStatusFilter(e.target.value)} status={statusFilter} />
       <ul className="book-list">
         {filteredBooks.sort((a, b) => a.id - b.id).map(book => 
           <BookCard key={book.id} book={book} />
