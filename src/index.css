@@ -194,6 +194,8 @@ code {
 .reading-status {
   height: 30px;
   border-radius: 6px;
+  border: none;
+  background-color: #EEE;
 }
 
 /* Review Form */

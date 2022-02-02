@@ -12,7 +12,6 @@ function Home() {
   return (
     <div className="home">
       <h2 className="quote">❝{quote}❞</h2>
-      {/* <img src="https://imgix.bustle.com/uploads/image/2020/9/3/81f07923-8de2-4007-bb89-c8c5b2b0c8b7-dune-book-cover.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg" alt="dune" className="cover-image" /> */}
     </div>
   )
 }
