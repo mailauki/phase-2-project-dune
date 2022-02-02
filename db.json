@@ -20,8 +20,8 @@
       "id": "3",
       "image": "https://images4.penguinrandomhouse.com/cover/9780593201749?height=295&alt=cover_coming_soon.jpg",
       "series": "Dune Chronicles: 3",
-      "rating": null,
-      "comments": "",
+      "rating": 4,
+      "comments": "Cool!",
       "reading_status": "to-read"
     },
     {
@@ -30,7 +30,7 @@
       "series": "Dune Chronicles: 4",
       "rating": 4,
       "comments": "Plot twists around every corner.",
-      "reading_status": ""
+      "reading_status": "reading"
     },
     {
       "id": "5",

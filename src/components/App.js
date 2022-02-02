@@ -11,7 +11,7 @@ function App() {
       <Header />
       <div className="contents-container">
         <Switch>
-          <Route path="/home"><Home /></Route>
+          <Route exact path="/"><Home /></Route>
           <Route exact path="/books"><BookList /></Route>
           <Route path="/books/:id"><BookDetail /></Route>
           <Route path="/reviews"><Reviews /></Route>
