@@ -28,12 +28,37 @@ function Reviews() {
     })
   }, [books])
 
+  // console.log(updatedBooks)
+
+  function handleRemove(id) {
+    const formData = {rating: null, comments: ""}
+
+    fetch(`http://localhost:3001/books/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(r => r.json())
+    .then(data => {
+      const updatedData = []
+      updatedBooks.map(book => {
+        if(data.id === book.id) {
+          updatedData.push(data)
+        }
+        else updatedData.push(book)
+      })
+      setUpdatedBooks(updatedData)
+    })
+  }
+
   return (
     <div className="reviews-container">
       <ul className="reviews">
         {updatedBooks.map(book => {
           if(book.rating !== null) {
-            return <ReviewCard key={book.id} book={book} />
+            return <ReviewCard key={book.id} book={book} removeReview={handleRemove} />
           }
         })}
       </ul>

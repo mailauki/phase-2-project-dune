@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Form from "./Form";
 
-function ReviewCard({ book }) {
+function ReviewCard({ book, removeReview }) {
   const [isOpen, setIsOpen] = useState(false)
   const [rating, setRating] = useState(book.rating)
   const [comment, setComment] = useState(book.comments)
@@ -16,7 +16,8 @@ function ReviewCard({ book }) {
         <div>
           <p>Rating: {rating}</p>
           <h5>"{comment}"</h5>
-          <button className="edit" onClick={() => setIsOpen(true)}>Edit</button>
+          <button className="button" onClick={() => setIsOpen(true)}>Edit</button>
+          <button className="button" onClick={() => removeReview(book.id)}>Remove</button>
         </div>
         }
       </div>
